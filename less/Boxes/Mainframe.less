@@ -1,0 +1,143 @@
+.mainframe {
+	margin-bottom: 23px;
+	
+	&_slider {
+		position: relative;
+
+		.swiper {
+			&-container {
+				padding-left: 9px;
+				transform: translateX(-9px);
+			}
+
+			&-counter {
+				display: flex;
+				align-items: flex-end;
+				font-family: @roboto;
+				color: @green;
+				position: absolute;
+				top: 11px;
+				left: 27px;
+				z-index: 20;
+
+				.counter {
+					&-curent { font-size: 37px; }
+					&-max {
+						font-size: 20px;
+						margin-bottom: 4.7px;
+					}
+				}
+			}
+		}
+
+		&:before {
+			content: '';
+			width: calc(100% - 34px);
+			height: calc(100% - 60px);
+			box-shadow: 0 3px 43px #ACACAC;
+			.center-v();
+			bottom: 0;
+			z-index: -1;
+		}
+	}
+
+	&_link {
+		display: block;
+	}
+
+	&_img {
+		width: 100%;
+		height: auto;
+	}
+
+	&_bookmark {
+		width: 193px;
+		height: 42px;
+		.flex-ajc();
+		background-color: @orange;
+		font-family: @segoe;
+		font-size: 16px;
+		font-weight: 600;
+		color: white;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+		margin-right: 25px;
+		position: absolute;
+		bottom: 38px;
+		left: -9px;
+
+		&:before {
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 9px 5px 0;
+			border-color: transparent #977608 transparent transparent;
+			position: absolute;
+			bottom: -5px;
+			left: 0px;
+		}
+
+		&:after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 42px 0 0 25px;
+			border-color: transparent transparent transparent #ffb300;
+			position: absolute;
+			top: 0;
+			right: -25px;
+		}
+	}
+
+	&_picture {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		&:before {
+			content: '';
+			width: calc(100% - 50px);
+			height: calc(100% - 65px);
+			box-shadow: 0 3px 43px #ACACAC;
+			.center-v();
+			bottom: 5px;
+			z-index: -1;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.mainframe {
+		margin-bottom: 18px;
+		
+		&_slider {
+			.swiper-container {
+				padding-left: 0;
+				margin-bottom: 18px;
+				transform: none;
+			}
+		}
+
+		&_link {
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+
+		&_bookmark {
+			width: 100%;
+			justify-content: flex-start;
+			padding-left: 60px;
+			padding-right: 30px;
+			position: static;
+		}
+
+		&_picture {
+			margin-bottom: 35px;
+		}
+	}
+}

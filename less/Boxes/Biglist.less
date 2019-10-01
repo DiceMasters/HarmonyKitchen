@@ -1,0 +1,52 @@
+.biglist {
+	&_title {
+		.flex-ajc();
+		margin-bottom: 40px;
+
+		p {
+			font-family: @roboto;
+			font-size: 25px;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+
+	&_box {
+		display: flex;
+		align-items: stretch;
+		margin-bottom: 65px;
+	}
+
+	&_count {
+		flex-shrink: 0;
+		font-family: @roboto;
+		font-size: 200px;
+		color: black;
+		line-height: 165px;
+		text-align: right;
+		margin-right: 22px;
+	}
+
+	&_text {
+		p {
+			width: calc(100% - 30px);
+			font-family: @roboto;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.biglist {
+		&_box {
+			flex-direction: column;
+		}
+
+		&_count {
+			font-size: 148px;
+			text-align: center;
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.white {
+	margin-bottom: 30px;
+	
+	&_box {
+		flex-grow: 1;
+		background-color: white;
+		padding: 24px 26px;
+		box-shadow: 0 17px 47px -14px rgba(0, 0, 0, .16);
+
+		.info_title { margin-bottom: 16px; }
+		.text_box { margin-bottom: 45px; }
+	}
+}
+
+@media (max-width: 992px) {
+	.white {
+		&_box {
+			margin-bottom: 37px;
+			box-shadow: 0 17px 47px -14px rgba(0,0,0,.1);
+
+			.featuresmini_box { margin-bottom: 15px; }
+		}
+	}
+}

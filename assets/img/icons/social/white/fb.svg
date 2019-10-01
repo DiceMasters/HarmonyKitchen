@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Group_402" data-name="Group 402" transform="translate(-883 -50)">
+    <g id="Path_1261" data-name="Path 1261" transform="translate(883 50)" fill="none">
+      <path d="M11,0A11,11,0,1,1,0,11,11,11,0,0,1,11,0Z" stroke="none"/>
+      <path d="M 11 1 C 5.485979080200195 1 1 5.485979080200195 1 11 C 1 16.51401901245117 5.485979080200195 21 11 21 C 16.51401901245117 21 21 16.51401901245117 21 11 C 21 5.485979080200195 16.51401901245117 1 11 1 M 11 0 C 17.07513046264648 0 22 4.924869537353516 22 11 C 22 17.07513046264648 17.07513046264648 22 11 22 C 4.924869537353516 22 0 17.07513046264648 0 11 C 0 4.924869537353516 4.924869537353516 0 11 0 Z" stroke="none" fill="#fff"/>
+    </g>
+    <g id="_001-facebook" data-name="001-facebook" transform="translate(890 54)">
+      <g id="Group_311" data-name="Group 311" transform="translate(0)">
+        <path id="Path_1142" data-name="Path 1142" d="M132.433,4.877V3.1a.887.887,0,0,1,.887-.887h.887V0h-1.773a2.66,2.66,0,0,0-2.66,2.66V4.877H128V7.094h1.773v7.094h2.66V7.094h1.773l.887-2.217Z" transform="translate(-128)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

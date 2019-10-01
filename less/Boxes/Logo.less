@@ -1,0 +1,28 @@
+.logo {
+	&_box {
+		display: block;
+
+		img {
+			width: 216px;
+			height: auto;
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.logo_box img { width: 180px; }
+}
+
+@media (max-width: 992px) {
+	.logo_box {
+		padding: 0 16px;
+		width: 100%;
+		max-width: 280px;
+		height: auto;
+
+		img {
+			width: 100%;
+		}
+	}
+}

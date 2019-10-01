@@ -1,0 +1,34 @@
+.imggroup {
+	margin-bottom: 69px;
+	
+	&_box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: -32px;
+
+		img {
+			box-shadow: 0 3px 20px rgba(0, 0, 0, .16);
+			margin: 0 15px;
+			margin-bottom: 32px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.imggroup_box img { width: calc(50% - 30px); }
+}
+
+@media (max-width: 992px) {
+	.imggroup {
+		&_box {
+			flex-direction: column;
+
+			img {
+				width: 100%;
+				margin: 0;
+				margin-bottom: 55px;
+			}
+		}
+	}
+}

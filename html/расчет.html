@@ -1,0 +1,516 @@
+@@include('./static/header.html')
+<div class="content">
+	<div class="container breadcrumbs">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="breadcrumbs_box">
+					<a href="#">Кухни</a>
+					<a href="#">Расчет стоимости кухни</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="title_box title_box--page">
+					<p>Расчет стоимости кухни</p>
+					<div class="title_subtext">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="stepform_component">
+					<p class="stepform_title">Узнайте сколько будет стоить ваша кухня</p>
+					<div class="stepform_bullets">
+						<a href="#" class="stepform_bullets_item" data-step-bullet="1"></a>
+						<a href="#" class="stepform_bullets_item" data-step-bullet="2"></a>
+						<a href="#" class="stepform_bullets_item" data-step-bullet="3"></a>
+						<a href="#" class="stepform_bullets_item" data-step-bullet="4"></a>
+						<a href="#" class="stepform_bullets_item" data-step-bullet="5"></a>
+					</div>
+					<div class="stepform_steps">
+						<div class="stepform_box" data-step="1">
+							<div class="stepform_part">
+								<p class="stepform_part_title">
+									Выберите планировку
+								</p>
+								<div class="stepform_part_radio_group">
+									<div class="buildform_filter_type_items buildform_filter_type_items--stepform">
+										<div class="buildform_filter_type_item">
+											<div class="buildform_filter_type_icon buildform_filter_type_icon--straight"></div>
+											<input type="radio" name="ktype" value="straight" checked hidden data-change-part="straight">
+											<p>Прямая</p>
+										</div>
+										<div class="buildform_filter_type_item">
+											<div class="buildform_filter_type_icon buildform_filter_type_icon--angular"></div>
+											<p>Угловая</p>
+											<input type="radio" name="ktype" value="angular" hidden data-change-part="angular">
+										</div>
+										<div class="buildform_filter_type_item">
+											<div class="buildform_filter_type_icon buildform_filter_type_icon--quadro"></div>
+											<input type="radio" name="ktype" value="quadro" hidden data-change-part="quadro">
+											<p>П-образная</p>
+										</div>
+										<div class="buildform_filter_type_item">
+											<div class="buildform_filter_type_icon buildform_filter_type_icon--islando"></div>
+											<input type="radio" name="ktype" value="islando" hidden data-change-part="islando">
+											<p>Островная</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepform_part">
+								<p class="stepform_part_title">
+									Выберите стиль
+								</p>
+								<div class="stepform_part_checkbox_group">
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Классический</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox" checked>
+											<label>Лофт</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Hi tec</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Модерн</label>
+										</div>
+									</div>
+								</div>
+								<div class="stepform_part_checkbox_group">
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Минимализм</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Прованс</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Катри</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Еще не знаю</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepform_next">
+								<button class="btn btn-primary js-stepform-next">Следующий шаг</button>
+							</div>
+						</div>
+						<div class="stepform_box" data-step="2">
+							<div class="stepform_col">
+								<!-- STRAIGHT -->
+								<div class="stepform_part stepform_part--stretch" data-part="straight">
+									<div class="stepform_col_icon">
+										<i class="icon icon_g_straight"></i>
+									</div>
+									<p class="stepform_title stepform_title--left">
+										Укажите размер
+									</p>
+									<p class="stepform_subtitle stepform_subtitle--left">
+										Прямая кухня
+									</p>
+									<div class="stepform_input">
+										<label>Длина (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+								</div>
+								<!-- ANGULAR -->
+								<div class="stepform_part" data-part="angular">
+									<div class="stepform_col_icon">
+										<i class="icon icon_g_angular"></i>
+									</div>
+									<p class="stepform_title stepform_title--left">
+										Угловая размер
+									</p>
+									<p class="stepform_subtitle stepform_subtitle--left">
+										Прямая кухня
+									</p>
+									<div class="stepform_input">
+										<label>Левая стена (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+									<div class="stepform_input">
+										<label>Правая стена (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+								</div>
+								<!-- QUADRO -->
+								<div class="stepform_part" data-part="quadro">
+									<div class="stepform_col_icon">
+										<i class="icon icon_g_quadro"></i>
+									</div>
+									<p class="stepform_title stepform_title--left">
+										Укажите размер
+									</p>
+									<p class="stepform_subtitle stepform_subtitle--left">
+										П-образная кухня
+									</p>
+									<div class="stepform_input">
+										<label>Левая стена (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+									<div class="stepform_input">
+										<label>Правая стена (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+									<div class="stepform_input">
+										<label>Центр (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+								</div>
+								<!-- ISLANDO -->
+								<div class="stepform_part" data-part="islando">
+									<div class="stepform_col_icon">
+										<i class="icon icon_g_islando"></i>
+									</div>
+									<p class="stepform_title stepform_title--left">
+										Укажите размер
+									</p>
+									<p class="stepform_subtitle stepform_subtitle--left">
+										Островная кухня
+									</p>
+									<div class="stepform_input">
+										<label>Левая стена (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+									<div class="stepform_input">
+										<label>Правая стена (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+									<div class="stepform_input">
+										<label>Центр (см)</label>
+										<input type="text" class="form-control form-control--light" placeholder="________________________________">
+									</div>
+								</div>
+							</div>
+							<div class="stepform_col">
+								<div class="stepform_part">
+									<p class="stepform_title stepform_title--left">
+										Выберите материал
+									</p>
+									<div class="stepform_input">
+										<div class="stepform_input_group">
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Массив</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>МДФ-шпон дуба</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>МДФ-эмаль</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>МДФ-пленка ПВХ</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>МДФ-пластик</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="stepform_next">
+									<button class="btn btn-primary js-stepform-next">Следующий шаг</button>
+								</div>
+							</div>
+						</div>
+						<div class="stepform_box" data-step="3">
+							<div class="stepform_col">
+								<div class="stepform_part stepform_part--stretch">
+									<p class="stepform_title stepform_title--left">
+										Выберите столешницу
+									</p>
+									<div class="stepform_input">
+										<div class="stepform_input_group">
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Пластик</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Кварцовый агломерат</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Акриловый камень</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Еще не знаю</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepform_col">
+								<div class="stepform_part">
+									<p class="stepform_title stepform_title--left">
+										Выберите опции
+									</p>
+									<div class="stepform_input">
+										<div class="stepform_input_group">
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Фартук (стеновая панель)</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Мойка</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Бутылочница</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Мусорное ведро</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Волшебный уголок</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Смеситель</label>
+											</div>
+											<div class="buildform_filter_checkbox_item">
+												<input type="checkbox">
+												<label>Освещение</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepform_part">
+								<p class="stepform_part_title">
+									Выберите стиль
+								</p>
+								<div class="stepform_part_checkbox_group">
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Винтажи</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox" checked>
+											<label>Патина на фасадах</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Декоративные ножки</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Карниз нижний</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Пилястры</label>
+										</div>
+									</div>
+								</div>
+								<div class="stepform_part_checkbox_group">
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Ручки со стразами</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Зеркала</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Карниз верхний</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Колонны</label>
+										</div>
+									</div>
+									<div class="stepform_part_checkbox_item">
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Балюстрада из массива</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepform_next">
+								<button class="btn btn-primary js-stepform-next">Следующий шаг</button>
+							</div>
+						</div>
+						<div class="stepform_box" data-step="4">
+							<div class="stepform_part stepform_part--colpad flex-stretch">
+								<div class="flex-space-between aic m_fdc">
+									<div class="text_box">
+										<p>
+											Загрузите дизайн-проект, фотографию, макет<br>или эскиз вашей кухни <strong>(не обязательно)</strong>
+										</p>
+									</div>
+									<a href="#" class="btn btn-primary">Загрузить план помещения</a>
+								</div>
+							</div>
+							<div class="stepform_part stepform_part--colpad">
+								<p class="stepform_title stepform_title--left">
+									Выберите требуемую технику по необходимости
+								</p>
+								<div class="stepform_techs">
+									<div class="stepform_techs_item">
+										<div class="stepform_techs_img">
+											<img src="../assets/img/photos/goods/techs/1.png" alt="">
+										</div>
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Встраиваемый духовой шкаф</label>
+										</div>
+									</div>
+									<div class="stepform_techs_item">
+										<div class="stepform_techs_img">
+											<img src="../assets/img/photos/goods/techs/2.png" alt="">
+										</div>
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Варочная поверхность</label>
+										</div>
+									</div>
+									<div class="stepform_techs_item">
+										<div class="stepform_techs_img">
+											<img src="../assets/img/photos/goods/techs/3.png" alt="">
+										</div>
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Посудомоечная машина</label>
+										</div>
+									</div>
+									<div class="stepform_techs_item">
+										<div class="stepform_techs_img">
+											<img src="../assets/img/photos/goods/techs/4.png" alt="">
+										</div>
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Вытяжка</label>
+										</div>
+									</div>
+									<div class="stepform_techs_item">
+										<div class="stepform_techs_img">
+											<img src="../assets/img/photos/goods/techs/5.png" alt="">
+										</div>
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Стиральная машина</label>
+										</div>
+									</div>
+									<div class="stepform_techs_item">
+										<div class="stepform_techs_img">
+											<img src="../assets/img/photos/goods/techs/6.png" alt="">
+										</div>
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Встраиваемый</label>
+										</div>
+									</div>
+									<div class="stepform_techs_item">
+										<div class="stepform_techs_img">
+											<img src="../assets/img/photos/goods/techs/7.png" alt="">
+										</div>
+										<div class="buildform_filter_checkbox_item">
+											<input type="checkbox">
+											<label>Встраиваемая</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepform_next">
+								<button class="btn btn-primary js-stepform-next">Следующий шаг</button>
+							</div>
+						</div>
+						<div class="stepform_box" data-step="5">
+							<div class="stepform_part stepform_part--transparent">
+								<div class="text_box text_box--center">
+									<p>
+										Спасибо за обращение!<br>После окончания расчёта мы свяжемся с Вами
+									</p>
+									<a href="#">Посмотреть наши работы</a>
+								</div>
+							</div>
+							<div class="stepform_part stepform_part--colpad flex-stretch">
+								<div class="text_box text_box--center">
+									<p>
+										Заполните форму ниже, наш специалист свяжется с вами в удобное время и сообщит стоимость кухни по вашим замерам, а также проконсультирует по всем возникшим вопросам.
+									</p>
+								</div>
+								<div class="stepform_contact">
+									<div class="stepform_input">
+										<label>Как к вам обращаться</label>
+										<input type="text" class="form-control form-control--light" placeholder="Ваше имя">
+									</div>
+									<div class="stepform_input jcfe">
+										<label>Введите номер телефона для связи</label>
+										<input type="text" class="form-control form-control--light" placeholder="+7 (___) ___-__-__">
+									</div>
+								</div>
+							</div>
+							<div class="stepform_next">
+								<button class="btn btn-primary" type="submit">
+									Узнать стоимость
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+@@include('./static/footer.html')

@@ -1,0 +1,33 @@
+.tab {
+	margin-bottom: 18px;
+
+	&_box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&_links {
+		margin-bottom: 35px;
+	}
+
+	&_item {
+		overflow: hidden;
+		height: 0;
+
+		&.active {
+			display: flex;
+			overflow: unset;
+			height: auto;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.tab {
+		margin-bottom: 40px;
+
+		&_links {
+			flex-direction: column;
+		}
+	}
+}

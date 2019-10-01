@@ -1,0 +1,43 @@
+.minifilter {
+	&_box {
+		display: flex;
+		flex-wrap: wrap;
+
+		a, a:hover, a:focus {
+			font-family: @roboto;
+			font-size: 14px;
+			color: black;
+			text-decoration: underline;
+			text-decoration-style: dotted;
+
+			&.active {
+				font-weight: bold;
+			}
+
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.minifilter_box { margin-bottom: 15px; }
+}
+
+@media (max-width: 992px) {
+	.minifilter {
+		&_box {
+			flex-direction: column;
+			align-items: center;
+
+			a, a:hover, a:focus {
+				font-size: 19px;
+				text-decoration: none;
+				border-bottom: 2px dotted black;
+
+				&:not(:last-child) { margin-right: 0; }
+			}
+		}
+	}
+}

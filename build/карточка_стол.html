@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+
+	<link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="../assets/libs/select/select.css">
+	<link rel="stylesheet" href="../assets/libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../assets/libs/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="../assets/styles/General.css">
+</head>
+<body>
+	<header>
+		<div class="header_top hidden-sm hidden-xs">
+			<div class="container container-fullheight">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="header_top_wrap">
+							<div class="header_top_item"> 
+								<img src="../assets/img/icons/white/factory.svg" alt="">
+								<span>Собсвтенное производство</span>
+							</div>
+							<div class="header_top_item">
+								<img src="../assets/img/icons/white/eco.svg" alt="">
+								<span>Эко-материалы</span>
+							</div>
+							<div class="header_top_item">
+								<img src="../assets/img/icons/white/compass.svg" alt="">
+								<span>Проекты любой сложности</span>
+							</div>
+							<div class="header_top_item">
+								<img src="../assets/img/icons/white/drawing.svg" alt="">
+								<span>Бесплатный дизайн проект</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_main">
+			<div class="container container-fullheight">
+				<div class="row hidden-sm hidden-xs">
+					<div class="col-lg-3 col-md-3 col-sm-3 flex-aic">
+						<a href="#" class="logo_box">
+							<img src="../assets/img/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 flex-ajc">
+						<div class="social_box">
+							<div class="social_row">
+								<p class="hidden-md">Присоединяйтесь:</p>
+								<div class="social_items">
+									<a href="#"><img src="../assets/img/icons/social/social-ok.svg" alt=""></a>
+									<a href="#"><img src="../assets/img/icons/social/social-twitter.svg" alt=""></a>
+									<a href="#"><img src="../assets/img/icons/social/social-vk.svg" alt=""></a>
+									<a href="#"><img src="../assets/img/icons/social/social-telegram.svg" alt=""></a>
+									<a href="#"><img src="../assets/img/icons/social/social-facebook.svg" alt=""></a>
+								</div>
+							</div>
+							<div class="social_row">
+								<form class="search_box">
+									<input type="text" class="search_input" placeholder="Поиск по сайту">
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 flex-ajc">
+						<div class="contact_box">
+							<div class="contact_item">
+								<img src="../assets/img/icons/green/location.svg" alt="">
+								<p>пл. Карла Фаберже д. 8<br>МЦ "Мебель холл", секция 302, 3 этаж</p>
+							</div>
+							<div class="contact_item">
+								<img src="../assets/img/icons/green/envelope.svg" alt="">
+								<a href="mailto:info@kuxni-shop.ru">info@kuxni-shop.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 flex-jcc flex-column flex-aife">
+						<div class="contact_box">
+							<div class="contact_item contact_item--primary">
+								<img src="../assets/img/icons/green/phone.svg" alt="">
+								<a href="tel:88126406048">+7 (812) 640-60-48</a>
+							</div>
+						</div>
+						<a href="#" class="btn btn-warning">Обратный звонок</a>
+					</div>
+				</div>
+				<div class="row row-mobile">
+					<div class="col-xs-12 flex-space-between aic">
+						<button class="mobile_button mobile_button--menu" id="menuOpen"></button>
+						<a href="#" class="logo_box">
+							<img src="../assets/img/logo.svg" alt="" class="img-responsive">
+						</a>
+						<button class="mobile_button mobile_button--phone"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_nav">
+			<div class="container container-fullheight">
+				<div class="row">
+					<div class="col-xs-12">
+						<button class="mobile_button mobile_button--close visible-xs visible-sm" id="closeMenu"></button>
+						<nav class="nav_box">
+							<div class="nav_link nav_link--catalog">
+								<div class="nav_link_catarget">
+									Каталог
+								</div>
+								<div class="nav_dropdown" data-catalog>
+									<div class="nav_dropdown_wrap">
+										<div class="nav_dropdown_col">
+											<div class="nav_dropdown_title">
+												<p>Кухни</p>
+											</div>
+											<div class="nav_dropdown_items">
+												<div class="nav_dropdown_item">
+													<p class="nav_dropdown_type">Планировка</p>
+													<a href="#" class="nav_dropdown_link">Прямые</a>
+													<a href="#" class="nav_dropdown_link">Угловые</a>
+													<a href="#" class="nav_dropdown_link">П-образные</a>
+												</div>
+												<div class="nav_dropdown_item">
+													<p class="nav_dropdown_type">Стиль</p>
+													<a href="#" class="nav_dropdown_link">Прованс</a>
+													<a href="#" class="nav_dropdown_link">Лофт</a>
+													<a href="#" class="nav_dropdown_link">Модерн</a>
+													<a href="#" class="nav_dropdown_link">Классик</a>
+													<a href="#" class="nav_dropdown_link">Скандинавский</a>
+													<a href="#" class="nav_dropdown_link">Кантри</a>
+													<a href="#" class="nav_dropdown_link">Глянцевый</a>
+												</div>
+												<div class="nav_dropdown_item">
+													<p class="nav_dropdown_type">Материал</p>
+													<a href="#" class="nav_dropdown_link">Массив</a>
+													<a href="#" class="nav_dropdown_link">Пластик</a>
+													<a href="#" class="nav_dropdown_link">Пленка ПВХ</a>
+													<a href="#" class="nav_dropdown_link">Шпон</a>
+													<a href="#" class="nav_dropdown_link">Эмаль</a>
+													<a href="#" class="nav_dropdown_link">Акрил</a>
+												</div>
+												<div class="nav_dropdown_item">
+													<p class="nav_dropdown_type">Дополнительно</p>
+													<a href="#" class="nav_dropdown_link">Дизайнерские</a>
+													<a href="#" class="nav_dropdown_link">Со встроенной техникой</a>
+													<a href="#" class="nav_dropdown_link">Элитные</a>
+													<a href="#" class="nav_dropdown_link">С барной стойкой</a>
+													<a href="#" class="nav_dropdown_link">С островом</a>
+													<a href="#" class="nav_dropdown_link">Маленькие</a>
+												</div>
+											</div>
+										</div>
+										<div class="nav_dropdown_col">
+											<div class="nav_dropdown_title"></div>
+											<div class="nav_dropdown_items">
+												<div class="nav_dropdown_item">
+													<p class="nav_dropdown_type">Обеденные группы</p>
+													<a href="#" class="nav_dropdown_link">Столы</a>
+													<a href="#" class="nav_dropdown_link">Стулья и табуреты</a>
+													<a href="#" class="nav_dropdown_link nav_dropdown_link--green">Столешницы</a>
+													<a href="#" class="nav_dropdown_link nav_dropdown_link--green">Искуственный камень</a>
+													<a href="#" class="nav_dropdown_link nav_dropdown_link--green">Бытовая техника</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="nav_link">О нас</a>
+							<a href="#" class="nav_link">Акции</a>
+							<a href="#" class="nav_link">Сборка и доставка</a>
+							<a href="#" class="nav_link">Проектировщик</a>
+							<a href="#" class="nav_link">Наши проекты</a>
+							<a href="#" class="nav_link">Онлайн оплата</a>
+							<a href="#" class="nav_link">Цены</a>
+							<a href="#" class="nav_link">Отзывы</a>
+							<a href="#" class="nav_link">Контакты</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<div class="content">
+	<div class="container breadcrumbs">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="breadcrumbs_box">
+					<a href="#">Кухни</a>
+					<a href="#">Стулья</a>
+					<a href="#">Стул "Верелли"</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container cardy">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="cardy_title">
+					<p>Стул "Верелли"</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-xs-12">
+				<div class="cardy_photo cardy_photo--thumbs">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="../assets/img/photos/goods/cardy/chair-verelly.jpg" data-fancybox="cardy" class="cardy_slide">
+									<div class="cardy_slide_img" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg');"></div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="../assets/img/photos/goods/cardy/chair-verelly.jpg" data-fancybox="cardy" class="cardy_slide">
+									<div class="cardy_slide_img" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg');"></div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="../assets/img/photos/goods/cardy/chair-verelly.jpg" data-fancybox="cardy" class="cardy_slide">
+									<div class="cardy_slide_img" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg');"></div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="../assets/img/photos/goods/cardy/chair-verelly.jpg" data-fancybox="cardy" class="cardy_slide">
+									<div class="cardy_slide_img" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg');"></div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="../assets/img/photos/goods/cardy/chair-verelly.jpg" data-fancybox="cardy" class="cardy_slide">
+									<div class="cardy_slide_img" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg');"></div>
+								</a>
+							</div>
+						</div>
+						<!-- <div class="swiper-pagination"></div> -->
+					</div>
+					<div class="cardy_thumbs_wrap">
+						<div class="cardy_thumbs">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="cardy_thumb" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg')"></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="cardy_thumb" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg')"></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="cardy_thumb" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg')"></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="cardy_thumb" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg')"></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="cardy_thumb" style="background-image: url('../assets/img/photos/goods/cardy/chair-verelly.jpg')"></div>
+									</div>
+								</div>
+								<div class="swiper-scrollbar"></div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="cardy_rating"><span>57</span></div> -->
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-xs-12">
+				<div class="cardy_info">
+					<div class="cardy_price">
+						<div class="cardy_price_old">
+							<del>от <strong>85 000</strong> руб</del>
+						</div>
+						<div class="cardy_price_cur">
+							<p>от <strong>76 000</strong> руб</p>
+						</div>
+						<div class="cardy_price_notify">
+							<p><sup>*</sup>цена указана за погонный метр</p>
+						</div>
+					</div>
+					<div class="cardy_submit cardy_submit--double">
+						<a href="#" class="btn btn-jumbo btn-light">
+							Заказать
+						</a>
+						<a href="#" class="btn btn-jumbo btn-primary">
+							Получить консультацию по этому товару
+						</a>
+					</div>
+					<div class="cardy_attr">
+						<div class="cardy_attr_item">
+							<p>Размер:</p>
+							<p>2200 x 5500 мм</p>
+						</div>
+						<div class="cardy_attr_item">
+							<p>Гарантия:</p>
+							<p>10 лет</p>
+						</div>
+						<div class="cardy_attr_item">
+							<p>Срок изготовления:</p>
+							<p>2 недели</p>
+						</div>
+						<div class="cardy_attr_item">
+							<p>Материал фассадов:</p>
+							<p>массив</p>
+						</div>
+						<div class="cardy_attr_item">
+							<p>Столешница:</p>
+							<p>исскуственный камень</p>
+						</div>
+						<div class="cardy_attr_item">
+							<p>Корпус:</p>
+							<p>массив</p>
+						</div>
+						<div class="cardy_attr_item">
+							<p>Фурнитура:</p>
+							<p>Hettich</p>
+						</div>
+						<div class="cardy_attr_item">
+							<p>Стиль:</p>
+							<p>Современный</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container text">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-xs-12s">
+				<div class="text_box">
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-xs-12s">
+				<div class="text_box">
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="title_box">
+					<p>Похожие товары</p>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="good_slider" data-slides="4">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="card_box">
+									<div class="card_photo">
+										<img src="../assets/img/photos/goods/chairs/1.jpg" alt="">
+										<div class="card_photo_offer_group">
+											<div class="card_photo_offer card_photo_offer--hit">
+												<span>Хит продаж</span>
+											</div>
+											<div class="card_photo_offer card_photo_offer--price">
+												<span>Лучшая цена</span>
+											</div>
+										</div>
+									</div>
+									<div class="card_info">
+										<p class="card_info_title">Стул "Верелли"</p>
+										<div class="card_info_simple">
+											<div class="card_info_attr">
+												<div class="card_info_attr_price">
+													<del>15 000 руб</del>
+												</div>
+												<div class="card_info_attr_price">
+													<p>от <strong>65 000</strong> руб</p>
+												</div>
+											</div>
+											<div class="card_info_submit_group">
+												<a href="" class="btn btn-warning">
+													Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card_box">
+									<div class="card_photo">
+										<img src="../assets/img/photos/goods/chairs/2.jpg" alt="">
+										<div class="card_photo_offer_group">
+											<div class="card_photo_offer card_photo_offer--benefit">
+												<span>Выгодная покупка</span>
+											</div>
+										</div>
+									</div>
+									<div class="card_info">
+										<p class="card_info_title">Стул "Верелли"</p>
+										<div class="card_info_simple">
+											<div class="card_info_attr">
+												<div class="card_info_attr_price">
+													<del>15 000 руб</del>
+												</div>
+												<div class="card_info_attr_price">
+													<p>от <strong>70 000</strong> руб</p>
+												</div>
+											</div>
+											<div class="card_info_submit_group">
+												<a href="" class="btn btn-warning">
+													Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card_box">
+									<div class="card_photo">
+										<img src="../assets/img/photos/goods/chairs/3.jpg" alt="">
+										<div class="card_photo_offer_group">
+											<div class="card_photo_offer card_photo_offer--price">
+												<span>Лучшая цена</span>
+											</div>
+										</div>
+									</div>
+									<div class="card_info">
+										<p class="card_info_title">Стул "Верелли"</p>
+										<div class="card_info_simple">
+											<div class="card_info_attr">
+												<div class="card_info_attr_price">
+													<del>15 000 руб</del>
+												</div>
+												<div class="card_info_attr_price">
+													<p>от <strong>45 000</strong> руб</p>
+												</div>
+											</div>
+											<div class="card_info_submit_group">
+												<a href="" class="btn btn-warning">
+													Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card_box">
+									<div class="card_photo">
+										<img src="../assets/img/photos/goods/chairs/4.jpg" alt="">
+										<div class="card_photo_offer_group">
+											<div class="card_photo_offer card_photo_offer--price">
+												<span>Лучшая цена</span>
+											</div>
+										</div>
+									</div>
+									<div class="card_info">
+										<p class="card_info_title">Стул "Верелли"</p>
+										<div class="card_info_simple">
+											<div class="card_info_attr">
+												<div class="card_info_attr_price">
+													<del>15 000 руб</del>
+												</div>
+												<div class="card_info_attr_price">
+													<p>от <strong>45 000</strong> руб</p>
+												</div>
+											</div>
+											<div class="card_info_submit_group">
+												<a href="" class="btn btn-warning">
+													Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="good_slider_nav good_slider_nav--prev"></div>
+					<div class="good_slider_nav good_slider_nav--next"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<footer>
+		<div class="footer_top">
+			<div class="container container-fullheight">
+				<div class="row">
+					<div class="col-xs-12 visible-sm visible-xs">
+						<div class="footer_mobile">
+							<button class="btn btn-warning">Позвонить</button>
+							<button class="btn btn-gray">Нужна консультация</button>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs flex-aic">
+						<a href="#" class="logo_box">
+							<img src="../assets/img/logo_footer.svg" alt="">
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-4 hidden-sm hidden-xs flex-ajc">
+						<nav class="nav_footer">
+							<a href="#" class="nav_footer_link">О нас</a>
+							<a href="#" class="nav_footer_link">Сборка</a>
+							<a href="#" class="nav_footer_link">Доставка</a>
+							<a href="#" class="nav_footer_link">Новости</a>
+							<a href="#" class="nav_footer_link">Наши работы</a>
+							<a href="#" class="nav_footer_link">Отзывы</a>
+							<a href="#" class="nav_footer_link">Цены</a>
+							<a href="#" class="nav_footer_link">Pro кухни</a>
+							<a href="#" class="nav_footer_link">Контакты</a>
+						</nav>
+					</div>
+					<div class="col-lg-4 col-md-4 col-md-offset-1 col-lg-offset-1 flex-aife">
+						<div class="social_box social_box--footer">
+							<div class="social_row">
+								<p>Присоединяйтесь:</p>
+								<div class="social_items">
+									<a href="#"><img src="../assets/img/icons/social/white/ok.svg" alt=""></a>
+									<a href="#"><img src="../assets/img/icons/social/white/twitter.svg" alt=""></a>
+									<a href="#"><img src="../assets/img/icons/social/white/vk.svg" alt=""></a>
+									<a href="#"><img src="../assets/img/icons/social/white/telegram.svg" alt=""></a>
+									<a href="#"><img src="../assets/img/icons/social/white/fb.svg" alt=""></a>
+								</div>
+							</div>
+							<div class="social_row">
+								<p>Разработка и продвижение сайтов <a href="#" class="seonity">SEO<strong>NITY</strong></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="container container-fullheight">
+				<div class="row">
+					<div class="col-lg-12 flex-ajc">
+						<p>Внимание! Данный интернет-сайт носит исключительно информационный характер и не является публичной офертой, определяемой положением ст. 437 (2) ГКРФ</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="../assets/libs/jquery.min.css"></script>
+	<script src="../assets/libs/swiper/swiper.min.js"></script>
+	<script src="../assets/libs/select/select.js"></script>
+	<script src="../assets/libs/nicescroll/jquery.nicescroll.min.js"></script>
+	<script src="../assets/libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="../assets/libs/nouislider/nouislider.min.js"></script>
+	<script src="../assets/scripts/main.js"></script>
+</body>
+</html>

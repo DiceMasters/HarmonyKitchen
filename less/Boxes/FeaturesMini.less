@@ -1,0 +1,42 @@
+.featuresmini {
+	margin-bottom: 30px;
+	
+	&_box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			width: auto;
+			height: 70px;
+			margin-bottom: 13px;
+		}
+
+		p {
+			font-family: @roboto;
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.featuresmini {
+		.swiper {
+			&-container { padding-bottom: 39px; }
+
+			&-scrollbar {
+				width: 100%;
+				height: 18px;
+				background-color: #F2F2F2;
+				left: 0;
+				bottom: 0;
+
+				&-drag {
+					background-color: @green;
+					border-radius: 9px;
+				}
+			}
+		}
+	}
+}

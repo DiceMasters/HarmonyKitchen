@@ -1,0 +1,50 @@
+.title {
+	&_box {
+		.flex-ajc();
+		flex-direction: column;
+		padding-bottom: 28px;
+
+		p {
+			font-family: @roboto;
+			font-size: 40px;
+			color: @green;
+			text-align: center;
+		}
+
+		&--left {
+			justify-content: flex-start;
+			
+			p { text-align: left; }
+		}
+
+		&--page {
+			display: flex;
+			align-items: flex-start;
+			padding-bottom: 45px;
+
+			p {
+				font-size: 25px;
+				font-weight: bold;
+				color: black;
+				text-align: left;
+			}
+		}
+	}
+
+	&_subtext {
+		margin-top: 10px;
+
+		p {
+			font-family: @roboto;
+			font-size: 14px;
+			font-weight: normal;
+			line-height: 20px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.title_box {
+		padding-bottom: 40px;
+	}
+}

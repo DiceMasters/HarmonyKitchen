@@ -1,0 +1,61 @@
+.video {
+	&_box {
+		height: 354px;
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+
+		&:after {
+			content: '';
+			width: 63px;
+			height: 44px;
+			background-image: url('../../assets/img/icons/social/play.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			.center();
+			z-index: 2;
+		}
+
+		&:hover, &:focus {
+			color: black;
+			text-decoration: none;
+		}
+	}
+
+	&_poster {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	&_head {
+		width: 100%;
+		height: 82px;
+		background-color: rgba(255, 255, 255, .69);
+		display: flex;
+		align-items: center;
+		padding: 5px 23px;
+		z-index: 3;
+
+		p {
+			font-family: @roboto;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.video {
+		&_box {
+			height: 261px;
+			margin-bottom: 24px;
+		}
+	}
+}

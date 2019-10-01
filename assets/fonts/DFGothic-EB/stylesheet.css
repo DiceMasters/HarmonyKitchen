@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'DFGothic-EB';
+    src: url('DFGothic-EB-WIN-RKSJ-H.eot');
+    src: url('DFGothic-EB-WIN-RKSJ-H.eot?#iefix') format('embedded-opentype'),
+        url('DFGothic-EB-WIN-RKSJ-H.woff2') format('woff2'),
+        url('DFGothic-EB-WIN-RKSJ-H.woff') format('woff'),
+        url('DFGothic-EB-WIN-RKSJ-H.ttf') format('truetype'),
+        url('DFGothic-EB-WIN-RKSJ-H.svg#DFGothic-EB-WIN-RKSJ-H') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
